@@ -5,7 +5,6 @@ module = "alphalph"
 
 installfiles = {
 '*.sty',
-'alphalph-showcases.tex',
 '*.dtx','*.pdf'
 }
 
@@ -19,9 +18,9 @@ maxprintline=10000
 checkruns = 2
 
 tdslocations={
-"doc/latex/oberdiek/alphalph.pdf",
-"source/latex/oberdiek/alphalph.dtx",
-"tex/generic/oberdiek/alphalph.sty",
+"doc/latex/alphalph/alphalph.pdf",
+"source/latex/alphalph/alphalph.dtx",
+"tex/generic/alphalph/alphalph.sty",
 }
 
 function update_tag(file,content,tagname,tagdate)
