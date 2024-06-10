@@ -56,7 +56,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex alphalph.dtx
 %       makeindex -s gind.ist alphalph.idx
 %       pdflatex alphalph.dtx
@@ -252,13 +252,13 @@ and the derived files
 % presentation commands. They rely on a existing command
 % and define presentations for values greater the limits.
 % Three different methods are provided by the package.
-% In the following use cases they are presentated.
+% In the following use cases they are presented.
 %
 % \subsection{Use cases}
 %
 % \subsubsection{Number system based on symbols}
 %
-% Asume you are writing a book and your lecturer demands
+% Assume you are writing a book and your lecturer demands
 % that chapter numbers must be letters. But you have already
 % 30 chapters and you have only 26 letters?
 %
@@ -482,7 +482,7 @@ and the derived files
 % This error message is put in a macro \cs{@ctrerr}.
 % Thus \cs{newalphalph} calls the symbol provider and tests
 % a number by typesetting it in a temporary box. The error
-% macro \cs{@ctrerr} is catched, it proofs that the number
+% macro \cs{@ctrerr} is caught, it proofs that the number
 % is not supported. Also if the width of the result is zero
 % the number is considered as unavailable.
 %
@@ -499,7 +499,7 @@ and the derived files
 % They are basically the same as \cs{@Alph} and \cs{@alph}.
 % Some languages of package \xpackage{babel} redefine
 % \hologo{LaTeX}'s macros to include some font setup that
-% breaks expandibility. Therefore \cs{AlphAlph} and \cs{alphalph}
+% breaks expandability. Therefore \cs{AlphAlph} and \cs{alphalph}
 % are based on \cs{alphalph@Alph} and \cs{alphalph@alph} to get
 % the letters. The behaviour of these symbol providers for numbers
 % outside the range |1..26| is undefined.
@@ -523,7 +523,7 @@ and the derived files
 % \item The argument is a \hologo{TeX} number. Anything that would be
 %       accepted by \cmd{\number} is a valid argument:
 %       \begin{itemize}
-%       \item explicite constants,
+%       \item explicit constants,
 %       \item macros that expand to a number,
 %       \item count registers, \hologo{LaTeX} counter can used
 %             via \cmd{\value}, e.\,g.:\\
@@ -533,7 +533,7 @@ and the derived files
 % \item \hologo{eTeX}'s numeric expressions are supported, if \hologo{eTeX} is
 %       available. Then \cs{numexpr} is applied to the argument.
 %       Package \cs{calc}'s expressions are not supported.
-%       That would violate the expandibility.
+%       That would violate the expandability.
 % \end{itemize}
 %
 % \subsubsection{General usability}
@@ -817,7 +817,7 @@ and the derived files
 %    \begin{macro}{\alphalph@Alph}
 %    \begin{macro}{\alphalph@alph}
 %    The two commands \cmd{\AlPh@Alph} and \cmd{\AlPh@alph} convert a
-%    number into a letter (uppercase and lowercase respectivly).
+%    number into a letter (uppercase and lowercase respectively).
 %    The character |@| is used as an error symbol,
 %    if the number isn't in the range of 1 until 26.
 %    Here we need no space after the number |#1|, because the error
